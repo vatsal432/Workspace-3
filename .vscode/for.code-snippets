@@ -1,0 +1,15 @@
+{
+    "For Loop": {
+        "prefix": ["for", "fc"],
+        "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+        "description": "A for loop."
+    },
+    "console.log": {
+        "scope": "javascript",
+        "prefix": "cl",
+        "body": [
+            "console.${2|log,table,count,dir ,error,info|}(${TM_SELECTED_TEXT:`${1:Hello}`})"
+        ],
+        "description": "Log Output to console"
+    }
+}
